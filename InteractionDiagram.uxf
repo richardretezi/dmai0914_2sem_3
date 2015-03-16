@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>192</y>
+      <w>1360</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;1680.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>296</y>
+      <w>1400</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;1730.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>104</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>SaleUI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>168</x>
+      <y>392</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>productContainer: ProductContainer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>872</x>
+      <y>392</y>
+      <w>200</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>customerContainer: CustomerContainer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>392</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>invoiceContainer: InvoiceContainer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>416</x>
+      <y>392</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>invoice: Invoice
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>752</x>
+      <y>392</y>
+      <w>112</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>customer: Customer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>392</y>
+      <w>120</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>product: Product
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1096</x>
+      <y>392</y>
+      <w>136</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>saleOrder: SaleOrder
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1088</x>
+      <y>456</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>saleOrderLine: SaleOrderLine
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1240</x>
+      <y>392</y>
+      <w>208</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>saleOrderContainer: SaleOrderContainer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>256</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>saleController : SaleController
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>752</x>
+      <y>256</y>
+      <w>216</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>customerController : CustomerController
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>328</x>
+      <y>256</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>invoiceController: InvoiceController
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>104</x>
+      <y>256</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>productController: ProductController
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

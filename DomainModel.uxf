@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>402</y>
+      <w>126</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>SalesOrder
+--
+date
+deliverySatus
+deliveryDate
+totalPrice
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>540</y>
+      <w>126</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Invoice
+--
+name
+invoiceNo
+paymentDate
+amount</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>132</y>
+      <w>126</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Supplier
+--
+name
+address
+country
+phoneno
+email
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>396</y>
+      <w>126</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+name
+address
+odezipC
+city
+phoneno
+isCompany
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>252</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Product
+--
+name
+purchasePrice
+salesPrice
+rentPrice
+countryOfOrigin
+minStock
+inStock</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>204</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>m1=1..*
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>492</x>
+      <y>288</y>
+      <w>84</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>m1=1..*
+m2=0..*</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>414</y>
+      <w>90</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>m2=1
+m1=0..*</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>474</y>
+      <w>18</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>624</x>
+      <y>372</y>
+      <w>66</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Equipment
+--
+Type
+Description
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>372</y>
+      <w>66</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Clothing
+--
+Size
+Color
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>702</x>
+      <y>372</y>
+      <w>66</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>GunReplicas
+--
+fabric
+calibre
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>330</y>
+      <w>84</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>636</x>
+      <y>330</y>
+      <w>30</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>330</y>
+      <w>42</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>372</x>
+      <y>276</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>SaleOrderLine
+--
+quantity
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>312</y>
+      <w>30</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
