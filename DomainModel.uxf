@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="13.2">
-  <zoom_level>6</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>378</x>
-      <y>402</y>
-      <w>126</w>
-      <h>78</h>
+      <x>357</x>
+      <y>343</y>
+      <w>147</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>SalesOrder
 --
@@ -15,16 +15,16 @@ date
 deliverySatus
 deliveryDate
 totalPrice
-</panel_attributes>
+discount</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>378</x>
-      <y>540</y>
-      <w>126</w>
-      <h>78</h>
+      <x>357</x>
+      <y>504</y>
+      <w>147</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>Invoice
 --
@@ -37,10 +37,10 @@ amount</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>564</x>
-      <y>132</y>
-      <w>126</w>
-      <h>78</h>
+      <x>574</x>
+      <y>28</y>
+      <w>147</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>Supplier
 --
@@ -55,16 +55,17 @@ email
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
-      <y>396</y>
-      <w>126</w>
-      <h>78</h>
+      <x>126</x>
+      <y>336</y>
+      <w>147</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>Customer
 --
 name
 address
-odezipC
+email
+zipC
 city
 phoneno
 isCompany
@@ -74,10 +75,10 @@ isCompany
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>564</x>
-      <y>252</y>
-      <w>126</w>
-      <h>84</h>
+      <x>574</x>
+      <y>168</y>
+      <w>147</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>Product
 --
@@ -93,10 +94,10 @@ inStock</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>612</x>
-      <y>204</y>
-      <w>30</w>
-      <h>60</h>
+      <x>630</x>
+      <y>112</y>
+      <w>35</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>m1=1..*
 m2=0..*</panel_attributes>
@@ -105,22 +106,22 @@ m2=0..*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>492</x>
-      <y>288</y>
-      <w>84</w>
-      <h>24</h>
+      <x>490</x>
+      <y>210</y>
+      <w>98</w>
+      <h>28</h>
     </coordinates>
-    <panel_attributes>m1=1..*
+    <panel_attributes>m1=1
 m2=0..*</panel_attributes>
     <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>414</y>
-      <w>90</w>
-      <h>24</h>
+      <x>266</x>
+      <y>357</y>
+      <w>105</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>m2=1
 m1=0..*</panel_attributes>
@@ -129,10 +130,10 @@ m1=0..*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>438</x>
-      <y>474</y>
-      <w>18</w>
-      <h>78</h>
+      <x>427</x>
+      <y>427</y>
+      <w>21</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>m1=1
 m2=1</panel_attributes>
@@ -141,10 +142,10 @@ m2=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>624</x>
-      <y>372</y>
-      <w>66</w>
-      <h>48</h>
+      <x>644</x>
+      <y>308</y>
+      <w>77</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>Equipment
 --
@@ -157,10 +158,10 @@ Description
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>372</y>
-      <w>66</w>
-      <h>48</h>
+      <x>546</x>
+      <y>308</y>
+      <w>77</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>Clothing
 --
@@ -172,10 +173,10 @@ Color
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>702</x>
-      <y>372</y>
-      <w>66</w>
-      <h>48</h>
+      <x>735</x>
+      <y>308</y>
+      <w>77</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>GunReplicas
 --
@@ -187,10 +188,10 @@ calibre
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>672</x>
-      <y>330</y>
-      <w>84</w>
-      <h>54</h>
+      <x>700</x>
+      <y>259</y>
+      <w>98</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;120.0;70.0</additional_attributes>
@@ -198,10 +199,10 @@ calibre
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>636</x>
-      <y>330</y>
-      <w>30</w>
-      <h>54</h>
+      <x>658</x>
+      <y>259</y>
+      <w>35</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;30.0;70.0</additional_attributes>
@@ -209,10 +210,10 @@ calibre
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>564</x>
-      <y>330</y>
-      <w>42</w>
-      <h>54</h>
+      <x>574</x>
+      <y>259</y>
+      <w>49</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>50.0;10.0;10.0;70.0</additional_attributes>
@@ -220,10 +221,10 @@ calibre
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>372</x>
-      <y>276</y>
-      <w>126</w>
-      <h>42</h>
+      <x>350</x>
+      <y>196</y>
+      <w>147</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>SaleOrderLine
 --
@@ -235,10 +236,10 @@ quantity
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
-      <y>312</y>
-      <w>30</w>
-      <h>102</h>
+      <x>420</x>
+      <y>238</y>
+      <w>35</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>m1=1
 m2=1..*</panel_attributes>
