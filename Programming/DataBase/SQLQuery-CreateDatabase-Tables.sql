@@ -55,7 +55,9 @@ create table INVOICE (
 	name varchar(20),
 	invoiceNR varchar(20),
 	paymentDate varchar(20),
-	amount float
+	amount float,
+	saleID int foreign key (saleID) references SALES_ORDER(id) on delete cascade on update cascade
+
 );
 
 create table COUNTRY(
