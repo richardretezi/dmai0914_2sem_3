@@ -1,247 +1,371 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="13.2">
-  <zoom_level>7</zoom_level>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>336</x>
-      <y>357</y>
-      <w>147</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>SalesOrder
---
-date
-deliverySatus
-deliveryDate
-totalPrice
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>336</x>
-      <y>518</y>
-      <w>147</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>Invoice
---
-name
-invoiceNo
-paymentDate
-amount</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>553</x>
-      <y>42</y>
-      <w>147</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>Supplier
---
-name
-address
-country
-phoneno
-email
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>105</x>
-      <y>350</y>
-      <w>147</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>Customer
---
-name
-address
-zipCode
-city
-phoneno
-isCompany
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>553</x>
-      <y>182</y>
-      <w>147</w>
-      <h>98</h>
-    </coordinates>
-    <panel_attributes>Product
---
-name
-purchasePrice
-salesPrice
-rentPrice
-countryOfOrigin
-minStock
-inStock</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>609</x>
-      <y>126</y>
-      <w>35</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>m1=1..*
-m2=0..*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>469</x>
-      <y>224</y>
-      <w>98</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>m1=1..*
-m2=0..*</panel_attributes>
-    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>245</x>
-      <y>371</y>
-      <w>105</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>m2=1
-m1=0..*</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>406</x>
-      <y>441</y>
-      <w>21</w>
-      <h>91</h>
-    </coordinates>
-    <panel_attributes>m1=1
-m2=1</panel_attributes>
-    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>623</x>
-      <y>322</y>
-      <w>77</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>Equipment
---
-Type
-Description
+  <help_text>// Uncomment the following line to change the fontsize and font:
+fontsize=16
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
 
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>525</x>
-      <y>322</y>
-      <w>77</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>Clothing
---
-Size
-Color
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>714</x>
-      <y>322</y>
-      <w>77</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>GunReplicas
---
-fabric
-calibre
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>679</x>
-      <y>273</y>
-      <w>98</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>637</x>
-      <y>273</y>
-      <w>35</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;30.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>553</x>
-      <y>273</y>
-      <w>49</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>50.0;10.0;10.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>329</x>
-      <y>210</y>
-      <w>147</w>
-      <h>49</h>
-    </coordinates>
-    <panel_attributes>SaleOrderLine
---
-quantity
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>64</x>
+      <y>152</y>
+      <w>1392</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;1720.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>64</x>
+      <y>352</y>
+      <w>1400</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;1730.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>656</x>
+      <y>48</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>SaleUI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>464</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>dbProduct: DBProduct</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1192</x>
+      <y>464</y>
+      <w>200</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>dbCustomer : DBCustomer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>464</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>dbInvoice : DBInvoice
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>752</x>
+      <y>464</y>
+      <w>136</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>saleOrder: SaleOrder
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>592</y>
+      <w>168</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>saleOrderLine: SaleOrderLine
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>944</x>
+      <y>464</y>
+      <w>208</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>dbSaleOrder : DBSaleOrder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>592</x>
+      <y>248</y>
+      <w>192</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>saleController : SaleController
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1160</x>
+      <y>312</y>
+      <w>248</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>customerController : CustomerController
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>399</x>
-      <y>252</y>
-      <w>35</w>
-      <h>119</h>
+      <x>680</x>
+      <y>64</y>
+      <w>256</w>
+      <h>200</h>
     </coordinates>
-    <panel_attributes>m1=1
-m2=1..*</panel_attributes>
+    <panel_attributes>lt=-
+1.0 startSale()
+2.0 addCustomer(int phoneNo)
+3.0 findProduct(String name)
+4.0 addProductToSaleLine(p, int quantity)
+5.0 createInvoice()
+6.0 endSale()</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>776</x>
+      <y>240</y>
+      <w>528</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-
+2.1 c = findCustomer(phoneNo)
+</panel_attributes>
+    <additional_attributes>10.0;20.0;640.0;20.0;640.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>344</y>
+      <w>208</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=-
+3.1.1 p=findProduct(String name)
+4.1.1 checkQuantity(p , quantity)
+</panel_attributes>
     <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1280</x>
+      <y>328</y>
+      <w>208</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=-
+2.1.1 c = findCustomer(phoneNo)</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>808</x>
+      <y>480</y>
+      <w>288</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=-
+4.2.1 ol = new OrderLine()
+4.2.2 addProductToSaleOrderLine(p, quantity)
+4.2.3 addOrderLine(ol)</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>56</x>
+      <y>328</y>
+      <w>152</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=-
+6.2.1 addInvoiceToDB(i)
+</panel_attributes>
+    <additional_attributes>40.0;170.0;40.0;80.0;140.0;80.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>264</y>
+      <w>272</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=-
+1.1 so = new SaleOrder()
+2.2 addCustomerToSaleOrder(c)
+4.2 addProductToSaleOrderLine(p, quantity)
+5.2 setInvoiceIdInSaleOrder(invoiceId)
+
+</panel_attributes>
+    <additional_attributes>250.0;250.0;250.0;100.0;80.0;100.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>264</y>
+      <w>320</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=-
+6.1 addSaleOrderToDB(saleOrder)
+</panel_attributes>
+    <additional_attributes>380.0;60.0;380.0;30.0;10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>312</y>
+      <w>216</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>invoiceController: InvoiceController
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>208</x>
+      <y>248</y>
+      <w>400</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+5.1 i = createInvoice(saleId)
+6.2 addInvoiceToDB(i)
+</panel_attributes>
+    <additional_attributes>480.0;20.0;10.0;20.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>464</y>
+      <w>136</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>invoice: Invoice
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>272</x>
+      <y>328</y>
+      <w>184</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=-
+5.1.1 i = new Invoice(saleId)
+</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>408</x>
+      <y>328</y>
+      <w>216</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>productController: ProductController
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>448</x>
+      <y>264</y>
+      <w>248</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-
+3.1 p = findProduct(name)
+4.1 = checkProductQuantity(p , quantity)
+
+
+</panel_attributes>
+    <additional_attributes>100.0;80.0;100.0;30.0;200.0;30.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>888</x>
+      <y>312</y>
+      <w>248</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>saleOrderController : SaleOrderController
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1024</x>
+      <y>328</y>
+      <w>232</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=-
+6.1.1 addSaleOrderToDB(saleOrder)
+</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
