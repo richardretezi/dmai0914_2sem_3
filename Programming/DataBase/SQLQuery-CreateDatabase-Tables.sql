@@ -60,7 +60,8 @@ create table COUNTRY(
 create table CUSTOMER(
 	id int identity(1,1) primary key (id),
 	name varchar(20),
-	cAddress varchar (50),
+	cAddress varchar (50),	
+	email, varchar(20),
 	zipcodeID int foreign key (zipcodeID) references COUNTRY (id) on delete cascade on update cascade,
 	phoneNR varchar (20),
 	isCompany bit

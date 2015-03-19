@@ -29,7 +29,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>64</x>
-      <y>120</y>
+      <y>208</y>
       <w>1392</w>
       <h>32</h>
     </coordinates>
@@ -40,7 +40,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>64</x>
-      <y>320</y>
+      <y>408</y>
       <w>1400</w>
       <h>24</h>
     </coordinates>
@@ -51,7 +51,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>656</x>
-      <y>16</y>
+      <y>104</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -62,7 +62,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>432</x>
-      <y>432</y>
+      <y>520</y>
       <w>192</w>
       <h>24</h>
     </coordinates>
@@ -73,7 +73,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>1192</x>
-      <y>432</y>
+      <y>520</y>
       <w>200</w>
       <h>24</h>
     </coordinates>
@@ -84,7 +84,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>432</y>
+      <y>520</y>
       <w>192</w>
       <h>24</h>
     </coordinates>
@@ -96,7 +96,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>752</x>
-      <y>432</y>
+      <y>520</y>
       <w>136</w>
       <h>24</h>
     </coordinates>
@@ -108,7 +108,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>944</x>
-      <y>432</y>
+      <y>520</y>
       <w>208</w>
       <h>24</h>
     </coordinates>
@@ -119,7 +119,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>592</x>
-      <y>216</y>
+      <y>304</y>
       <w>192</w>
       <h>24</h>
     </coordinates>
@@ -131,7 +131,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>1160</x>
-      <y>280</y>
+      <y>368</y>
       <w>248</w>
       <h>24</h>
     </coordinates>
@@ -143,13 +143,13 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>680</x>
-      <y>32</y>
+      <y>120</y>
       <w>256</w>
       <h>200</h>
     </coordinates>
     <panel_attributes>lt=-
 1.0 startSale()
-2.0 addCustomer(int phoneNo)
+2.0 addCustomer(String phoneNo)
 3.0 findProduct(String name)
 4.0 addProductToSaleLine(p, int quantity)
 5.0 createInvoice()
@@ -160,7 +160,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>776</x>
-      <y>208</y>
+      <y>296</y>
       <w>528</w>
       <h>88</h>
     </coordinates>
@@ -173,7 +173,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>520</x>
-      <y>312</y>
+      <y>400</y>
       <w>208</w>
       <h>136</h>
     </coordinates>
@@ -187,7 +187,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>1280</x>
-      <y>296</y>
+      <y>384</y>
       <w>208</w>
       <h>152</h>
     </coordinates>
@@ -199,7 +199,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>696</x>
-      <y>448</y>
+      <y>536</y>
       <w>248</w>
       <h>88</h>
     </coordinates>
@@ -212,7 +212,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>56</x>
-      <y>296</y>
+      <y>384</y>
       <w>152</w>
       <h>152</h>
     </coordinates>
@@ -225,7 +225,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>632</x>
-      <y>232</y>
+      <y>320</y>
       <w>240</w>
       <h>216</h>
     </coordinates>
@@ -242,7 +242,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>728</x>
-      <y>232</y>
+      <y>320</y>
       <w>320</w>
       <h>64</h>
     </coordinates>
@@ -255,7 +255,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>96</x>
-      <y>280</y>
+      <y>368</y>
       <w>216</w>
       <h>24</h>
     </coordinates>
@@ -267,7 +267,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>208</x>
-      <y>216</y>
+      <y>304</y>
       <w>400</w>
       <h>80</h>
     </coordinates>
@@ -281,7 +281,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>216</x>
-      <y>432</y>
+      <y>520</y>
       <w>136</w>
       <h>24</h>
     </coordinates>
@@ -293,7 +293,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>272</x>
-      <y>296</y>
+      <y>384</y>
       <w>184</w>
       <h>152</h>
     </coordinates>
@@ -306,7 +306,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>408</x>
-      <y>296</y>
+      <y>384</y>
       <w>216</w>
       <h>24</h>
     </coordinates>
@@ -318,7 +318,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>448</x>
-      <y>232</y>
+      <y>320</y>
       <w>248</w>
       <h>88</h>
     </coordinates>
@@ -334,7 +334,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>888</x>
-      <y>280</y>
+      <y>368</y>
       <w>248</w>
       <h>24</h>
     </coordinates>
@@ -346,7 +346,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>1024</x>
-      <y>296</y>
+      <y>384</y>
       <w>232</w>
       <h>152</h>
     </coordinates>

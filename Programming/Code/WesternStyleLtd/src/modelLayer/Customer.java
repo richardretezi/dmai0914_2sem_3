@@ -5,8 +5,7 @@ public class Customer {
 	private String name;
 	private String address;
 	private String email;
-	private int zipC;
-	private String city;
+	private int zipCodeID;
 	private int phoneno;
 	private boolean isCompany;
 	
@@ -14,14 +13,13 @@ public class Customer {
 		
 	}
 	
-	public Customer( String name, String address, String email, int zipC, String city, 
+	public Customer( String name, String address, String email, int zipC,
 			int phoneno, boolean isCompany){
 		
 		this.name = name;
 		this.address = address;
 		this.email = email;
-		this.zipC = zipC;
-		this.city = city;
+		this.zipCodeID = zipC;
 		this.phoneno = phoneno;
 		this.isCompany = isCompany;
 		
@@ -51,20 +49,12 @@ public class Customer {
 		this.email = email;
 	}
 
-	public int getZipC() {
-		return zipC;
+	public int getZipCodeID() {
+		return zipCodeID;
 	}
 
-	public void setZipC(int zipC) {
-		this.zipC = zipC;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
+	public void setZipCodeID(int zipC) {
+		this.zipCodeID = zipC;
 	}
 
 	public int getPhoneno() {
