@@ -6,7 +6,7 @@ import modelLayer.*;
 
 public interface IFDBEquipment {
 	  	public ArrayList<Equipment> getAllEquipment(boolean retriveAssociation);
-	   public Cloathing findEquipment(String name, boolean retriveAssosciation);
-	   public int insert(Equipment dept);
+	   public Equipment findEquipment(int id, boolean retriveAssosciation);
+	   public int insert(Equipment dept) throws Exception;
 	   public int update(Equipment dept);
 }
