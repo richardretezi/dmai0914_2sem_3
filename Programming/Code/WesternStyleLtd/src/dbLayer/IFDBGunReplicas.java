@@ -6,7 +6,7 @@ import modelLayer.*;
 
 public interface IFDBGunReplicas {
 	  public ArrayList<GunReplicas> getGunReplicas(boolean retriveAssociation);
-	   public GunReplicas findGunReplicas(String name, boolean retriveAssosciation);
+	   public GunReplicas findGunReplicas(int id, boolean retriveAssosciation);
 	   public int insert(GunReplicas dept);
 	   public int update(GunReplicas dept);
 }
