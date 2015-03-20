@@ -29,7 +29,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>64</x>
-      <y>208</y>
+      <y>152</y>
       <w>1392</w>
       <h>32</h>
     </coordinates>
@@ -40,7 +40,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>64</x>
-      <y>408</y>
+      <y>352</y>
       <w>1400</w>
       <h>24</h>
     </coordinates>
@@ -51,7 +51,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>656</x>
-      <y>104</y>
+      <y>48</y>
       <w>80</w>
       <h>24</h>
     </coordinates>
@@ -62,7 +62,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>432</x>
-      <y>520</y>
+      <y>464</y>
       <w>192</w>
       <h>24</h>
     </coordinates>
@@ -73,7 +73,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>1192</x>
-      <y>520</y>
+      <y>464</y>
       <w>200</w>
       <h>24</h>
     </coordinates>
@@ -84,7 +84,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>520</y>
+      <y>464</y>
       <w>192</w>
       <h>24</h>
     </coordinates>
@@ -96,11 +96,11 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>752</x>
-      <y>520</y>
+      <y>464</y>
       <w>136</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>saleOrder: SaleOrder
+    <panel_attributes>salesOrder: SalesOrder
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -108,18 +108,18 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>944</x>
-      <y>520</y>
+      <y>464</y>
       <w>208</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>dbSaleOrder : DBSaleOrder</panel_attributes>
+    <panel_attributes>dbSalesOrder : DBSalesOrder</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>592</x>
-      <y>304</y>
+      <y>248</y>
       <w>192</w>
       <h>24</h>
     </coordinates>
@@ -131,7 +131,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>1160</x>
-      <y>368</y>
+      <y>312</y>
       <w>248</w>
       <h>24</h>
     </coordinates>
@@ -143,7 +143,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>680</x>
-      <y>120</y>
+      <y>64</y>
       <w>256</w>
       <h>200</h>
     </coordinates>
@@ -160,7 +160,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>776</x>
-      <y>296</y>
+      <y>240</y>
       <w>528</w>
       <h>88</h>
     </coordinates>
@@ -173,7 +173,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>520</x>
-      <y>400</y>
+      <y>344</y>
       <w>208</w>
       <h>136</h>
     </coordinates>
@@ -187,7 +187,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>1280</x>
-      <y>384</y>
+      <y>328</y>
       <w>208</w>
       <h>152</h>
     </coordinates>
@@ -199,7 +199,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>696</x>
-      <y>536</y>
+      <y>480</y>
       <w>248</w>
       <h>88</h>
     </coordinates>
@@ -212,7 +212,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>56</x>
-      <y>384</y>
+      <y>328</y>
       <w>152</w>
       <h>152</h>
     </coordinates>
@@ -225,15 +225,15 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>632</x>
-      <y>320</y>
+      <y>264</y>
       <w>240</w>
       <h>216</h>
     </coordinates>
     <panel_attributes>lt=-
-1.1 so = new SaleOrder()
-2.2 addCustomerToSaleOrder(c)
+1.1 so = new SalesOrder()
+2.2 addCustomerToSalesOrder(c)
 4.2 addProductToSaleLine(p, quantity)
-5.2 setInvoiceIdInSaleOrder(invoiceId)
+5.2 setInvoiceIdInSalesOrder(invoiceId)
 
 </panel_attributes>
     <additional_attributes>230.0;250.0;230.0;100.0;60.0;100.0;60.0;10.0</additional_attributes>
@@ -242,12 +242,12 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>728</x>
-      <y>320</y>
+      <y>264</y>
       <w>320</w>
       <h>64</h>
     </coordinates>
     <panel_attributes>lt=-
-6.1 addSaleOrderToDB(saleOrder)
+6.1 addSalesOrderToDB(saleOrder)
 </panel_attributes>
     <additional_attributes>380.0;60.0;380.0;30.0;10.0;30.0;10.0;10.0</additional_attributes>
   </element>
@@ -255,7 +255,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>96</x>
-      <y>368</y>
+      <y>312</y>
       <w>216</w>
       <h>24</h>
     </coordinates>
@@ -267,7 +267,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>208</x>
-      <y>304</y>
+      <y>248</y>
       <w>400</w>
       <h>80</h>
     </coordinates>
@@ -281,7 +281,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>216</x>
-      <y>520</y>
+      <y>464</y>
       <w>136</w>
       <h>24</h>
     </coordinates>
@@ -293,7 +293,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>272</x>
-      <y>384</y>
+      <y>328</y>
       <w>184</w>
       <h>152</h>
     </coordinates>
@@ -306,7 +306,7 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>408</x>
-      <y>384</y>
+      <y>328</y>
       <w>216</w>
       <h>24</h>
     </coordinates>
@@ -318,7 +318,7 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>448</x>
-      <y>320</y>
+      <y>264</y>
       <w>248</w>
       <h>88</h>
     </coordinates>
@@ -334,11 +334,11 @@ fontsize=16
     <id>UMLClass</id>
     <coordinates>
       <x>888</x>
-      <y>368</y>
+      <y>312</y>
       <w>248</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>saleOrderController : SaleOrderController
+    <panel_attributes>salesOrderController : SalesOrderController
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -346,12 +346,12 @@ fontsize=16
     <id>Relation</id>
     <coordinates>
       <x>1024</x>
-      <y>384</y>
-      <w>232</w>
+      <y>328</y>
+      <w>240</w>
       <h>152</h>
     </coordinates>
     <panel_attributes>lt=-
-6.1.1 addSaleOrderToDB(saleOrder)
+6.1.1 addSalesOrderToDB(saleOrder)
 </panel_attributes>
     <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
   </element>
