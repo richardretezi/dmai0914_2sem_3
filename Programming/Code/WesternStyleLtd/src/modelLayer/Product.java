@@ -1,6 +1,7 @@
 package modelLayer;
 
 public class Product {
+	private int id;
 	private String name;
 	private double purchasePrice;
 	private double salesPrice;
@@ -8,13 +9,15 @@ public class Product {
 	private String countryOfOrigin;
 	private int minStock;
 	private int inStock;
+	private int type;
 	
 	public Product(){
 		
 	}
 	
-	public Product(String name, double purchasePrice, double salesPrice, double rentPrice, 
+	public Product(int id, String name, double purchasePrice, double salesPrice, double rentPrice, 
 			String countryOfOrigin, int minStock, int inStock){
+		this.id = id;
 		this.name = name;
 		this.purchasePrice = purchasePrice;
 		this.salesPrice = salesPrice;
@@ -24,7 +27,15 @@ public class Product {
 		this.inStock = inStock;
 		
 	}
+	
+	public int getProductID(){
+		return id;
+	}
 
+	public void setProductID(int id){
+		this.id = id;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -79,5 +90,13 @@ public class Product {
 
 	public void setInStock(int inStock) {
 		this.inStock = inStock;
+	}
+	
+	public int getProductType(){
+		return type;
+	}
+	
+	public void setProductType(int type){
+		this.type = type;
 	}
 }
