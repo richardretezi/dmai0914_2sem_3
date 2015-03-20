@@ -32,7 +32,7 @@ public class DBProduct implements IFDBProduct {
 	      //  System.out.println("next ssn = " +  nextId);
 	  
 	       int rc = -1;
-		   String query="INSERT INTO product(id, name, purchasePrice, salesPrice, rentPrice, countryofOrigin, "
+		   String query="INSERT INTO product( name, purchasePrice, salesPrice, rentPrice, countryofOrigin, "
 		   		+ "minStock, inStock, typee)  VALUES('"+
 		  		dept.getName()  + "','"  +
 			    dept.getPurchasePrice()  + "','"  +
@@ -40,7 +40,8 @@ public class DBProduct implements IFDBProduct {
 			    dept.getRentPrice()  + "','"  +
 			    dept.getCountryOfOrigin()  + "','"  +
 			    dept.getMinStock()  + "','"  +
-			    dept.getInStock() + "')";
+			    dept.getInStock() + "','" +
+			    dept.getProductType() +	"')";
 	                     
 
 	       System.out.println("insert : " + query);
@@ -134,6 +135,7 @@ public class DBProduct implements IFDBProduct {
 		private Product buildProduct(ResultSet results)
 	      {   Product prObj = new Product();
 	          try{ // the columns from the table employee  are used
+	        	  prObj.setProductID(Integer.parseInt(results.getString("id")));
 	        	  prObj.setName(results.getString("name"));
 	        	  prObj.setPurchasePrice(Double.parseDouble(results.getString("purchasePrice")));
 	        	  prObj.setSalesPrice(Double.parseDouble(results.getString("salesPrice")));
@@ -141,6 +143,7 @@ public class DBProduct implements IFDBProduct {
 	        	  prObj.setCountryOfOrigin(results.getString("countryOfOrigin"));
 	        	  prObj.setMinStock(Integer.parseInt(results.getString("minStock")));
 	        	  prObj.setInStock(Integer.parseInt(results.getString("inStock")));
+	        	  prObj.setProductType(Integer.parseInt(results.getString("typee")));
 	          }
 	         catch(Exception e)
 	         {

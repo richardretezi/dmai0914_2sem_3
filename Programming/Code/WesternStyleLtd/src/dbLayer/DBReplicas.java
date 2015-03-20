@@ -26,24 +26,12 @@ public class DBReplicas implements IFDBGunReplicas{
         return singleWhere(wClause, retriveAssociation);
 	}
 	public int insert(GunReplicas gr) throws Exception{
-		//int nextName = GetMax.getMaxId("Select max(ssn) from GunReplicas");
-        //nextSSN = nextSSN + 1;
-        //System.out.println("next ssn = " +  nextSSN);
-		/**String query1="INSERT INTO PRODUC(name, purchasePrice, salesPrice, rentPrice, "
-				+ "countryofOrigin, minStock, inStock, typee) VALUES('"+
-				+ "','" + 
-				gr.getName() + "','" +
-				gr.getPurchasePrice() + "','" +
-				gr.getSalesPrice() + "','" +
-				gr.getRentPrice() + "','" +
-				gr.getCountryOfOrigin() + "','" +
-				gr.getMinStock() + "','" +)
-				*/
-		
-       int rc = -1;
+		int idFromProduct = GetMax.getMaxId("Select max(id) from PRODUCT");
+		System.out.println("Id of the product coresponding to replicas= " + idFromProduct);
+		int rc = -1;
 	   String query="INSERT INTO GUN_REPLICAS(id, fabric, calibre)  VALUES('"+
 	  		  "','"  +
-		    //gr.getId()  + "','"  +
+		    idFromProduct  + "','"  +
             gr.getFabric() + "','" +
             gr.getCalibre() + "')";
                      
