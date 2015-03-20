@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 import dbLayer.DBConnect;
 
-public class DBSaleOrderLine {
+public class DBSaleOrderLine implements IFDBSaleOrderLine{
 	 private  Connection con;
 	    /** Creates a new instance of DBEmployee */
 	    public DBSaleOrderLine() {
@@ -27,7 +27,7 @@ public class DBSaleOrderLine {
 	        return singleWhere(wClause, retriveAssociation);
 	    }
 	    
-	    public int insert(SaleOrderLine dept) throws Exception
+	    public void insert(SaleOrderLine dept) throws Exception
 	    {  //call to get the next ssn number
 	       /* int nextSSN = GetMax.getMaxId("Select max(ssn) from employee");
 	        nextSSN = nextSSN + 1;
@@ -50,7 +50,7 @@ public class DBSaleOrderLine {
 	          System.out.println("OrderLine ikke oprettet");
 	          throw new Exception ("OrderLine is not inserted correctly");
 	       }
-	       return(rc);
+	       
 	    }
 	    
 	    public int update(SaleOrderLine dept) {
