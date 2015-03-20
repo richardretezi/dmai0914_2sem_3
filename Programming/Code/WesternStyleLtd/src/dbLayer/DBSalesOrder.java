@@ -24,7 +24,7 @@ public class DBSalesOrder implements IFDBSalesOrder {
 	private int costumerNumber;
 	
 	@Override
-	public ArrayList<SalesOrder> getAllSalesOrder(boolean retriveAssociation) {
+	public ArrayList<SalesOrder> getAllSalesOrders(boolean retriveAssociation) {
 		
 		return  miscWhere("", retriveAssociation);
 	}
