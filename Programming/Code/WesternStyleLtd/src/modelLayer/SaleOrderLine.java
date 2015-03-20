@@ -2,14 +2,14 @@ package modelLayer;
 
 public class SaleOrderLine {
 	private int quantity;
-	private Product p;
+	private int id;
 	
 	public SaleOrderLine(){
 		
 	}
 	
-	public SaleOrderLine(Product p, int quantity){
-		this.p = p;
+	public SaleOrderLine(int id, int quantity){
+		this.id = id;
 		this.quantity = quantity;
 	}
 
@@ -21,12 +21,12 @@ public class SaleOrderLine {
 		this.quantity = quantity;
 	}
 
-	public Product getP() {
-		return p;
+	public int getID() {
+		return id;
 	}
 
-	public void setP(Product p) {
-		this.p = p;
+	public void setID(int id) {
+		this.id = id;
 	}
 
 }
