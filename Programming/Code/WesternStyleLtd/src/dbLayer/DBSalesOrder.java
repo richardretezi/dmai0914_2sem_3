@@ -81,7 +81,7 @@ public class DBSalesOrder implements IFDBSalesOrder {
 			d = new SalesOrder();
 			d.setDate(rs.getString("sDate"));
 			d.setDeliveryStatus(rs.getBoolean("deliveryStatus"));
-			d.setTotalPrice(rs.getDouble("totalPrice"));
+			d.setTotalPrice(rs.getFloat("totalPrice"));
 			d.setInvoiceId(rs.getInt("id"));
 			d.setDeliveryDate(rs.getString("deliveryDate"));
 			d.setDiscount(rs.getInt("discount"));

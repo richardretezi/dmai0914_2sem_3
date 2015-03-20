@@ -1,18 +1,20 @@
 package modelLayer;
 
+import java.sql.Date;
+
 public class Invoice {
 	
 	private int salesOrderId;
 	private String name;
 	private int invoiceNo;
-	private String paymentDate;
-	private double amount;
+	private Date paymentDate;
+	private float amount;
 	
 	public Invoice(){
 		
 	}
 	
-	public Invoice(int salesOrderId, String name, int invoiceNo, String paymentDate, double amount){
+	public Invoice(int salesOrderId, String name, int invoiceNo, Date paymentDate, float amount){
 		this.salesOrderId = salesOrderId;
 		this.name = name;
 		this.invoiceNo = invoiceNo;
@@ -44,19 +46,19 @@ public class Invoice {
 		this.invoiceNo = invoiceNo;
 	}
 
-	public String getPaymentDate() {
+	public Date getPaymentDate() {
 		return paymentDate;
 	}
 
-	public void setPaymentDate(String paymentDate) {
+	public void setPaymentDate(Date paymentDate) {
 		this.paymentDate = paymentDate;
 	}
 
-	public double getAmount() {
+	public float getAmount() {
 		return amount;
 	}
 
-	public void setAmount(double amount) {
+	public void setAmount(float amount) {
 		this.amount = amount;
 	}
 	

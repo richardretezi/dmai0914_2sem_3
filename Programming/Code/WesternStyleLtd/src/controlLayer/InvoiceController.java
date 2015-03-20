@@ -39,7 +39,7 @@ public class InvoiceController {
            invoiceObject.setSalesOrderId(salesOrderId);
            invoiceObject.setName(name);
            invoiceObject.setInvoiceNo(invoiceNo);
-           invoiceObject.setPaymentDate(reportDate);
+           invoiceObject.setPaymentDate(paymentDate);
            invoiceObject.setAmount(amount);
     
            try{

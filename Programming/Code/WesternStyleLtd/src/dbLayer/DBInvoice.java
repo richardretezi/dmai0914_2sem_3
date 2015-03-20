@@ -133,8 +133,8 @@ public class DBInvoice implements IFDBInvoice{
               //iObj.setId(results.getString("id"));
               iObj.setName(results.getString("name"));
               iObj.setInvoiceNo(results.getInt("invoiceNR"));
-              iObj.setPaymentDate(results.getString("paymentDate"));
-              iObj.setAmount(results.getDouble("amount"));
+              iObj.setPaymentDate(results.getDate("paymentDate"));
+              iObj.setAmount(results.getFloat("amount"));
               iObj.setSalesOrderId(results.getInt("saleID"));
         }
        catch(Exception e)

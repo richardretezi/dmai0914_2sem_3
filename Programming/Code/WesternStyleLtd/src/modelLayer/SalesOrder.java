@@ -1,20 +1,23 @@
 package modelLayer;
 
+import controlLayer.CustomerController;
+
 public class SalesOrder {
 	private int invoiceId;
 	private String date;
 	private boolean deliveryStatus;
 	private String deliveryDate;
-	private double totalPrice;
+	private float totalPrice;
 	private int discount;
 	private double deliveryFee;
+	private Customer customer;
 	
 	public SalesOrder(){
 		
 	}
 	
 	public SalesOrder(int invoiceId, String date, boolean deliveryStatus, 
-			String deliveryDate, double totalPrice, int discount, double deliveryFee){
+			String deliveryDate, float totalPrice, int discount, double deliveryFee){
 		
 		this.invoiceId = invoiceId;
 		this.date = date;
@@ -58,11 +61,11 @@ public class SalesOrder {
 		this.deliveryDate = deliveryDate;
 	}
 
-	public double getTotalPrice() {
+	public float getTotalPrice() {
 		return totalPrice;
 	}
 
-	public void setTotalPrice(double totalPrice) {
+	public void setTotalPrice(float totalPrice) {
 		this.totalPrice = totalPrice;
 	}
 
@@ -80,6 +83,14 @@ public class SalesOrder {
 
 	public void setDeliveryFee(double deliveryFee) {
 		this.deliveryFee = deliveryFee;
+	}
+	
+	public void setCustomer (String phoneNo) {
+		customer = new CustomerController().findByFname(phoneNo);
+	}
+	
+	public Customer getCustomer () {
+		return customer;
 	}
 
 }
