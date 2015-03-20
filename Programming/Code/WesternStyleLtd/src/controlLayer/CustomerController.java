@@ -41,7 +41,7 @@ public class CustomerController {
            catch(Exception e)
            {
                DBConnect.rollbackTransaction();
-               throw new Exception("Employee not inserted");
+               throw new Exception("Customer not inserted");
            }
       }
 }
