@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import modelLayer.*;
 import dbLayer.*;
 
-public class DbCustomer implements IFDBCustomer {
+public class DBCustomer implements IFDBCustomer {
 	private  Connection con;
     /** Creates a new instance of DBEmployee */
-    public DbCustomer() {
+    public DBCustomer() {
       con = DBConnect.getInstance().getDBcon();
     }
 	@Override
